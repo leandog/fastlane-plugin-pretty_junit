@@ -6,7 +6,7 @@ require 'fastlane/plugin/pretty_junit/version'
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-pretty_junit'
   spec.version       = Fastlane::PrettyJunit::VERSION
-  spec.author        = %q{Gary Johnson}
+  spec.author        = %q{GaryJohnson}
   spec.email         = %q{gary@gjtt.com}
 
   spec.summary       = %q{Pretty JUnit test results for your Android projects.}

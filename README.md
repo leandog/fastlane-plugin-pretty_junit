@@ -16,6 +16,16 @@ Pretty JUnit test results for your Android projects.
 
 **Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
 
+```
+output_pattern = 'app/build/{test-results,outputs}/**/{normalDebug,NORMAL}/*.xml'
+delete_files(file_pattern: output_pattern)
+
+# We ignore exit code otherwise we wouldn't get to the actions below on test failure
+gradle(task: "testNormalDebugUnitTest", flags: "|| true")
+
+pretty_junit(file_pattern: output_pattern)
+```
+
 ## Example
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`. 

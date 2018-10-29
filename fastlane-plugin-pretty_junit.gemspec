@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'terminal-table'
-  spec.add_dependency 'nokogiri'
+  spec.add_dependency 'nokogiri', '>= 1.8.2'
   spec.add_dependency 'colorize'
 
   spec.add_development_dependency 'pry'
